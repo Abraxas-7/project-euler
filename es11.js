@@ -84,8 +84,8 @@ function orizzontale(grid) {
 }
 
 function verticale(grid) {
-  for (let i = 0; i <= grid[i].length - 4; i++) {
-    for (let j = 0; j < grid.length; j++) {
+  for (let i = 0; i <= grid.length - 4; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
       let column =
         grid[i][j] * grid[i + 1][j] * grid[i + 2][j] * grid[i + 3][j];
 
