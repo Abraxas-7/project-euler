@@ -24,11 +24,14 @@ for (let i = 1; i < num; i++) {
 }
 
 for (let key in memo) {
-  if (memo[key] > maxValue) {
-    maxValue = memo[key];
-    maxKey = key;
+  let n = Number(key);
+
+  if (n < num && memo[n] > maxValue) {
+    maxValue = memo[n];
+    maxKey = n;
   }
 }
+
 // console.log(memo);
 console.log(maxKey, maxValue);
 
